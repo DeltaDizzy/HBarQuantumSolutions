@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HBarQuantumSolutions")]
+[assembly: AssemblyTitle("HBarQuantumTech")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HBarQuantumSolutions")]
+[assembly: AssemblyProduct("HBarQuantumTech")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("101b7cc3-1041-4deb-80ce-57cc3bb95fcb")]
+[assembly: Guid("555f8770-2a50-4771-806e-f7b799ff10d6")]
 
 // Version information for an assembly consists of the following four values:
 //
