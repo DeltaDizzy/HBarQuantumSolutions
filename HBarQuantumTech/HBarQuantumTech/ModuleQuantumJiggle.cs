@@ -10,6 +10,7 @@ namespace HBarQuantumTech
     {
         public static Vector3d ForceToApply;
         public static float speed;
+        public static bool isJiggleActive;
 
         /*public static float SpeedGen()
         {
@@ -24,12 +25,6 @@ namespace HBarQuantumTech
 
         public void JiggleGen()
         {
-            /*foreach (Vessel currentVessel in FlightGlobals.VesselsLoaded)
-            {
-                //force = vessel mass: Force = vessel.GetTotalMass() * desiredAcceleration
-                ForceToApply *= (currentVessel.GetTotalMass() * 5);
-                this.part.AddForceAtPosition(ForceToApply, currentVessel.CoM);
-            }*/
             int loadedVesselCount = FlightGlobals.VesselsLoaded.Count();
             for (int index = 0; index < loadedVesselCount; index++)
             {
@@ -40,7 +35,10 @@ namespace HBarQuantumTech
         }
         public void FixedUpdate()
         {
-            this.JiggleGen();
+            if (isJiggleActive == true)
+            {
+                JiggleGen();
+            }
         }
     }
 }
