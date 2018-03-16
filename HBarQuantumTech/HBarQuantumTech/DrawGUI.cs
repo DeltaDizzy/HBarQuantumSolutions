@@ -9,7 +9,7 @@ using UnityEngine;
 namespace HBarQuantumTech
 {
     [KSPAddon(KSPAddon.Startup.EveryScene, false)]
-    class AppLauncherStuff : MonoBehaviour
+    class DrawGUI : MonoBehaviour
     {
         #region Fields
         private ApplicationLauncherButton toolbarButton;
