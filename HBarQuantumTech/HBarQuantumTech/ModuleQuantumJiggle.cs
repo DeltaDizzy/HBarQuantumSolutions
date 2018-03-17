@@ -6,11 +6,12 @@ using UnityEngine;
 
 namespace HBarQuantumTech
 {
+    [KSPAddon(KSPAddon.Startup.Flight, false)]
     public class ModuleQuantumJiggle : PartModule
     {
         public static Vector3d ForceToApply;
         public static float speed;
-        public static bool isJiggleActive;
+        public static bool isJiggleActive = false;
 
         /*public static float SpeedGen()
         {
