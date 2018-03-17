@@ -39,7 +39,13 @@ namespace HBarQuantumTech
                 HBarButton =
                     ApplicationLauncher.Instance.AddModApplication(
                         onTrue:     DrawPopup,
-                        onFalse:    
+                        onFalse:    RemoveAppButton,
+                        onHover:    null,
+                        onHoverOut: null,
+                        onEnable:   null,
+                        onDisable:  null,
+                        visibleInScenes: ApplicationLauncher.AppScenes.FLIGHT,
+                        texture:    GameDatabase.Instance.GetTexture("HBarQS/Icons/BoogieIcon.png", false)
                         );
             }
         }
@@ -77,9 +83,9 @@ namespace HBarQuantumTech
             }
         }
 
-        private void RemoveAppButton(ApplicationLauncherButton HBarButton)
+        private void RemoveAppButton()
         {
-
+            ApplicationLauncher.Instance.RemoveModApplication(HBarButton);
         }
         #endregion
 
