@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DrawGUI.cs" />
+    <Compile Include="HBarSkinDef.cs" />
     <Compile Include="ModuleQuantumJiggle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
