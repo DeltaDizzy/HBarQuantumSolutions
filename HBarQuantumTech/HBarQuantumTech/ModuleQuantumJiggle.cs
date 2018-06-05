@@ -35,6 +35,10 @@ namespace HBarQuantumTech
         }
         public void FixedUpdate()
         {
+           if(Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.K))
+           {
+                isJiggleActive = true;
+           }
             if (isJiggleActive == true)
             {
                 JiggleGen();
