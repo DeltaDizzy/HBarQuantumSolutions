@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\Desktop\KSP stuff\Historical Progression\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\Historical Progression\Kerbal Space Program\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -45,11 +46,17 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\Desktop\KSP stuff\Historical Progression\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\Historical Progression\Kerbal Space Program\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DrawUI.cs" />
+=======
+    <Compile Include="DrawGUI.cs" />
+    <Compile Include="HBarSkinDef.cs" />
+>>>>>>> 9d36f1ffa867383028e90976d30357b525285dba
     <Compile Include="ModuleQuantumJiggle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
