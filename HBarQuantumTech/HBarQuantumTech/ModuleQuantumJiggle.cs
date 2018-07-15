@@ -30,7 +30,7 @@ namespace HBarQuantumTech
             for (int index = 0; index < loadedVesselCount; index++)
             {
                 Vessel currentVessel = FlightGlobals.VesselsLoaded[index];
-                ForceToApply *= (currentVessel.GetTotalMass() * 5 * TimeWarp.fixedDeltaTime);
+                ForceToApply *= (currentVessel.GetTotalMass() * HBarSettings.JiggleForce * TimeWarp.fixedDeltaTime);
                 this.part.AddForceAtPosition(ForceToApply, currentVessel.CoM);
             }
         }

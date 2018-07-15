@@ -18,9 +18,6 @@ namespace HBarQuantumTech
         public static Vector2 SettingsAnchorMin = new Vector2(0.5f, 1f);
         public static Vector2 SettingsAnchorMax = new Vector2(0.5f, 1f);
 
-
-        [KSPField(isPersistant = true)]
-        private bool isHBarValueHigh = false;
         #endregion
 
         #region Awake
@@ -75,7 +72,7 @@ namespace HBarQuantumTech
                                 {
                                     ModuleQuantumJiggle.isJiggleActive = false;
                                 }, 140.0f, 30.0f, true),
-             
+
                             new DialogGUIButton("Close", () => { }, 140.0f, 30.0f, true)
                             )),
                     false,
